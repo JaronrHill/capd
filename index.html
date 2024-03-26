@@ -5,110 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <style>
-        /* Basic reset of styles */
-        body,
-        h1,
-        h2,
-        p,
-        ul,
-        li,
-        a {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            text-decoration: none;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        header,
-        footer {
-            text-align: center;
-            padding: 10px;
-        }
-
-        nav {
-            background: #333;
-            color: white;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        nav a {
-            color: white;
-            padding: 0 20px;
-        }
-
-        .button {
-            background: black;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            display: inline-block;
-            margin: 10px 0;
-        }
-
-        .featured-hats,
-        .full-collection {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-
-        .hat,
-        .collection-item {
-            background: #ddd;
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-        }
-
-        .inspiration {
-            border: 1px solid #333;
-            margin: 20px;
-            padding: 10px;
-        }
-
-        footer div {
-            background: #ddd;
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-            margin: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
+        <nav class="full-width-nav">
             <a href="#">Shop</a>
             <a href="#">About</a>
             <a href="#">Contact Us</a>
             <a href="#" class="button">Shop</a>
         </nav>
+        <div class="hero full-width-hero">
+            <img src="images/hatgguyhero.jpg" alt="Hero Image" class="full-width-image" />
+            <a href="#" class="custom-btn btn">Shop Now</a>
+        </div>
     </header>
 
     <main>
+        <h2>Featured Hats</h2>
         <section class="featured-hats">
-            <h2>Featured Hats</h2>
-            <div class="hat"></div>
-            <div class="hat"></div>
-            <div class="hat"></div>
+            <div class="hats-container">
+                <div class="hat-container">
+                    <img src="images/hat.jpg" alt="Hat 1">
+                    <button class="hat-btn">View Hat</button>
+                </div>
+                <div class="hat-container">
+                    <img src="images/hat.jpg" alt="Hat 2">
+                    <button class="hat-btn">View Hat</button>
+                </div>
+                <div class="hat-container">
+                    <img src="images/hat.jpg" alt="Hat 3">
+                    <button class="hat-btn">View Hat</button>
+                </div>
+                <div class="hat-container">
+                    <img src="images/hat.jpg" alt="Hat 4">
+                    <button class="hat-btn">View Hat</button>
+                </div>
+            </div>
         </section>
+
         <section class="inspiration">
+            <h2>Inspiration</h2>
             <p>Inspiration content goes here</p>
         </section>
+            <h2>See the Full Collection </h2>
         <section class="full-collection">
             <div class="collection-item"></div>
             <div class="collection-item"></div>
-            <a href="#" class="button">See the Full Collection ></a>
+            <a href="#" class="button"></a>
         </section>
     </main>
 
