@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Basic reset of styles */
+        body,
+        h1,
+        h2,
+        p,
+        ul,
+        li,
+        a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 0 20px;
+        }
+
+        .button {
+            background: black;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .featured-hats,
+        .full-collection {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .hat,
+        .collection-item {
+            background: #ddd;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        .inspiration {
+            border: 1px solid #333;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        footer div {
+            background: #ddd;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#" class="button">Shop</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-hats">
+            <h2>Featured Hats</h2>
+            <div class="hat"></div>
+            <div class="hat"></div>
+            <div class="hat"></div>
+        </section>
+        <section class="inspiration">
+            <p>Inspiration content goes here</p>
+        </section>
+        <section class="full-collection">
+            <div class="collection-item"></div>
+            <div class="collection-item"></div>
+            <a href="#" class="button">See the Full Collection ></a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <div>Socials</div>
+    </footer>
+
+</body>
+
+</html>
