@@ -245,10 +245,7 @@ nav a:hover {
 .featured-hats{
     margin: 2em 0;
     padding: 0 2em;
-}
-
-.featured-hats h2 {
-    margin-bottom: 20px;
+    padding-top: 0px;
 }
 
 .hats-container {
@@ -274,12 +271,6 @@ nav a:hover {
     width: 25%;
     box-sizing: border-box;
     padding: 10px;
-}
-
-.hat-container img {
-    width: 100%;
-    display: block;
-    height: auto;
 }
 
 .hat-btn {
