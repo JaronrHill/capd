@@ -1,3 +1,18 @@
+/*--------------------------------------- Colors ---------------------------------------*/
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f5f5f5;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey-light: #f8f9fa;
+    --color-grey-dark: #343a40;
+    --color-success: #28a745;
+    --color-info: #17a2b8;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    }
+
 /*--------------------------------------- Global Styles ---------------------------------------*/
 
 body,
@@ -172,9 +187,12 @@ nav a:hover {
 .full-width-hero {
     position: relative;
     width: 100%;
-    margin: 0;
+    height: 90vh;
     overflow: hidden;
+    margin: 0;
     margin-bottom: 2em;
+    background-size: cover;
+    background-position: center;
 }
 
 /*--------------------------------------- Button ---------------------------------------*/
@@ -246,6 +264,7 @@ nav a:hover {
     margin: 2em 0;
     padding: 0 2em;
     padding-top: 0px;
+    background-color: var(--secondary-color);
 }
 
 .hats-container {
@@ -331,9 +350,6 @@ h3{
     transform: scale(1.25);
 }
 
-/*--------------------------------------- Hat Container ---------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
-
 * {
     margin: 0;
     padding: 0;
@@ -342,10 +358,10 @@ h3{
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1em;
-    width: 800px;
+    width: 1700px;
     height: 500px;
     transition: all 400ms;
+    gap: 1.5em;
 }
 
 .container:hover .box {
@@ -364,34 +380,6 @@ h3{
 
 .container .box:hover {
     filter: grayscale(0%) opacity(100%);
-}
-
-.container:has(.box-1:hover) {
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-}
-
-.container:has(.box-2:hover) {
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-}
-
-.container:has(.box-3:hover) {
-    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-}
-
-.container:has(.box-4:hover) {
-    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
-}
-
-.container:has(.box-5:hover) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
-}
-
-.box:nth-child(odd) {
-    transform: translateY(-16px);
-}
-
-.box:nth-child(even) {
-    transform: translateY(16px);
 }
 
 .box::after {
@@ -414,33 +402,8 @@ h3{
     transition-delay: 400ms;
 }
 
-/*--------------------------------------- Hover Boxes ---------------------------------------*/
-
-
-.container {
-    gap: 1.5em;
-    width: 1700px;
-    height: 500px;
-    margin: 20px auto;
-    transition: all 400ms;
-}
-
-.container:hover .box {
-    filter: grayscale(100%) opacity(25%);
-}
-
-.box {
-    position: relative;
-    background: var(--img) center center;
-    background-size: cover;
-    transition: all 400ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .box:hover {
-    filter: grayscale(0%) opacity(100%);
+.box-1 img:hover {
+    filter: blur(20px)!important;
 }
 
 .container:has(.box-1:hover) {
@@ -469,26 +432,6 @@ h3{
 
 .box:nth-child(even) {
     transform: translateY(16px);
-}
-
-.box::after {
-    content: attr(data-text);
-    position: absolute;
-    bottom: 20px;
-    background: #000;
-    color: #fff;
-    padding: 10px 10px 10px 14px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    transform: translateY(60px);
-    opacity: 0;
-    transition: all 400ms;
-}
-
-.box:hover::after {
-    transform: translateY(0);
-    opacity: 1;
-    transition-delay: 400ms;
 }
 
 /*--------------------------------------- Footer ---------------------------------------*/
