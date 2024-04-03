@@ -60,3 +60,103 @@
     right: 0;
     width: 100%;
 }
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        align-items: flex-start;
+    }
+
+    nav {
+        padding: 5px 0;
+    }
+
+    nav a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .navbar-logo img {
+        max-height: 30px; 
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+
+    .hats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hat-container {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .full-width-hero {
+        height: 50vh;
+    }
+
+    .welcome-message {
+        font-size: 3em;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav,
+    .footer-socials {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-nav a,
+    .footer-socials a {
+        padding: 5px;
+    }
+}
+
+.container {
+    /* Adjust the layout to be in a single row */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure each box in the collection is displayed inline and has margin for separation */
+.box {
+    flex: 0 0 auto;
+    /* Do not grow, do not shrink, and base width on content */
+    margin-right: 20px;
+    /* Add some space between items */
+}
+
+/* Optional: Reduce the size of the boxes on smaller screens for better fit */
+.box {
+    width: 50%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Adjust the height as needed */
+}
+
+/* Remove the hover effect on mobile as it's not as effective on touch devices */
+.container .box:hover {
+    filter: none;
+}
+
+/* Ensure the last box has no right margin so the spacing looks consistent */
+.box:last-child {
+    margin-right: 0;
+}
