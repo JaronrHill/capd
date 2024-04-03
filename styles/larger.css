@@ -65,13 +65,6 @@
 
 @media (max-width: 768px) {
 
-    .container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
 /* Ensure each box in the collection is displayed inline and has margin for separation */
 .box {
     flex: 0 0 auto;
