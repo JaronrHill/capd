@@ -65,6 +65,39 @@
 
 @media (max-width: 768px) {
 
+    .container {
+    /* Adjust the layout to be in a single row */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure each box in the collection is displayed inline and has margin for separation */
+.box {
+    flex: 0 0 auto;
+    /* Do not grow, do not shrink, and base width on content */
+    margin-right: 20px;
+    /* Add some space between items */
+}
+
+/* Optional: Reduce the size of the boxes on smaller screens for better fit */
+.box {
+    width: 50%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Adjust the height as needed */
+}
+
+/* Remove the hover effect on mobile as it's not as effective on touch devices */
+.container .box:hover {
+    filter: none;
+}
+
+/* Ensure the last box has no right margin so the spacing looks consistent */
+.box:last-child {
+    margin-right: 0;
+}
     nav {
         align-items: flex-start;
     }
@@ -125,7 +158,6 @@
     .footer-socials a {
         padding: 5px;
     }
-}
 
 .container {
     /* Adjust the layout to be in a single row */
@@ -159,4 +191,6 @@
 /* Ensure the last box has no right margin so the spacing looks consistent */
 .box:last-child {
     margin-right: 0;
+}
+
 }
